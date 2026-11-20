@@ -1,0 +1,11 @@
+resources:
+  jobs:
+    chapter12_bundle_job:
+      name: chapter12-bundle-job
+      queue:
+        enabled: true
+
+      tasks:
+      - task_key: hello_chapter12
+        notebook_task:
+          notebook_path: ../hello_chapter12.ipynb
