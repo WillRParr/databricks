@@ -3,5 +3,5 @@ from pyspark.sql import functions as F
 def add_tax(df):
     return df.withColumn(
         "Tax",
-        F.col("Amount") * F.lit(0.05)
+        F.col("Amount") * F.lit(0.06)
     )
